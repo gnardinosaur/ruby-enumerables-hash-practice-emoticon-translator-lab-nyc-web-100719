@@ -1,7 +1,7 @@
 # require modules here
 
 def load_library(file)
-  require "yaml"
+  #require "yaml"
   file_hash = YAML.load_file(file)
   #translate_hash = {
    # :get_meaning => {},
