@@ -23,7 +23,7 @@ end
 def get_japanese_emoticon(file, emoticon)
   translate_hash = load_library(file)
   japanese_version = translate_hash[:get_emoticon][emoticon]
-  japanese_version
+  p japanese_version
 end
 
 def get_english_meaning(file, emoticon)
