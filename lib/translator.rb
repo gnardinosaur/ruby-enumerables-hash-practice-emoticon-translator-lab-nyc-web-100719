@@ -16,7 +16,7 @@ def load_library(file)
   }
   file_hash.each do |meaning, arr|
     meaning_hash = {
-      "#{meaning}" => "#{arr[1]}"
+      "#{arr[1]}" => "#{meaning}"
     }
     translate_hash[:get_meaning] = translate_hash[:get_meaning].merge!(meaning_hash)
     p translate_hash 
