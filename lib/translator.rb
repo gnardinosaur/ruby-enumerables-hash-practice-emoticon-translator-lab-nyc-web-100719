@@ -12,7 +12,7 @@ def load_library(file)
       "#{meaning}" => "#{arr[1]}"
     }
     translate_hash[:get_emoticon] = {
-      "#{arr[2]}" => "#{arr[1]}"
+      "#{arr[1]}" => "#{arr[0]}"
       }
     p translate_hash
   end
