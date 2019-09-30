@@ -3,7 +3,9 @@
 a = {:nick => "male"}
 b = {:heather => "female"}
 
-p a.merge!(b)
+a.merge!(b)
+p a
+
 
 def load_library(file)
   require "yaml"
