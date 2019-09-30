@@ -8,10 +8,10 @@ def load_library(file)
     :get_emoticon => {}
   }
   file_hash.each do |meaning, arr|
-    translate_hash.merge!(translate_hash[:get_meaning] = {
+    translate_hash[:get_meaning].merge!(translate_hash[:get_meaning] = {
       "#{meaning}" => "#{arr[1]}"
     })
-    translate_hash.merge!(translate_hash[:get_emoticon] = {
+    translate_hash[:get_emoticon].merge!(translate_hash[:get_emoticon] = {
       "#{arr[1]}" => "#{arr[0]}"
     })
     p translate_hash
