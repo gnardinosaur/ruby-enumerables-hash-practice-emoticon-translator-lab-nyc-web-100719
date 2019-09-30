@@ -1,7 +1,7 @@
 # require modules here
 
 a = {:nick => "male"}
-b = {:heather => "female"}
+b = {:heather => "female", :nick => "?"}
 
 a.merge!(b)
 p a
