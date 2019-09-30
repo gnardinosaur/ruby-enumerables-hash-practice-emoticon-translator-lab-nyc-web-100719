@@ -34,5 +34,6 @@ def get_english_meaning(file, emoticon)
   english_meaning = translate_hash[:get_meaning][emoticon]
   if english_meaning == nil
     english_meaning = "Sorry, that emoticon was not found"
+  end
   english_meaning
 end
