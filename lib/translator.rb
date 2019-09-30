@@ -8,9 +8,6 @@ def load_library(file)
     :get_emoticon => {}
   }
   file_hash.each do |meaning, arr|
-    #p meaning
-    #p arr[0]
-    #p arr[1]
     translate_hash[:get_meaning] = {
       "#{meaning}" => "#{arr[1]}"
     }
