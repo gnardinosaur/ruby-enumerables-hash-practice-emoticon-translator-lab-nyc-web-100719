@@ -13,7 +13,7 @@ def load_library(file)
     }
     translate_hash[:get_meaning] = translate_hash[:get_meaning].merge!(meaning_hash)
     emoticon_hash = {
-      "#{arr[1]}" => "#{arr[0]}"
+      "#{arr[0]}" => "#{arr[1]}"
     }
     translate_hash[:get_emoticon] = translate_hash[:get_emoticon].merge!(emoticon_hash)
   end
