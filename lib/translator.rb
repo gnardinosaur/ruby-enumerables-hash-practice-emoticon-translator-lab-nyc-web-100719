@@ -23,7 +23,10 @@ end
 def get_japanese_emoticon(file, emoticon)
   translate_hash = load_library(file)
   japanese_version = translate_hash[:get_emoticon][emoticon]
-  p japanese_version
+  if japanese_version == nil
+    japanese_version = "Sorry, that emoticon was not found"
+  end
+  japanese_version
 end
 
 def get_english_meaning(file, emoticon)
