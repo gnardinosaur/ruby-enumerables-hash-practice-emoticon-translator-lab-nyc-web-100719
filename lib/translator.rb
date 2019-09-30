@@ -11,6 +11,9 @@ def load_library(file)
     translate_hash[:get_meaning] = {
       "#{meaning}" => "#{arr[1]}"
     }
+    translate_hash[:get_emoticon] = {
+      "#{arr[2]}" => "#{arr[1]}"
+      }
     p translate_hash
   end
   p translate_hash
