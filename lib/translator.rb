@@ -14,8 +14,8 @@ def load_library(file)
     translate_hash[:get_emoticon] = {
       :"#{arr[1]}" => "#{arr[0]}"
       }
-    translate_hash.merge!(file_loop)  
-    p translate_hash
+    p file_loop
+    #p translate_hash
   end
   p translate_hash
 end
