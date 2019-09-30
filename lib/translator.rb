@@ -1,5 +1,10 @@
 # require modules here
 
+a = {:nick => "male"}
+b = {:heather => "female"}
+
+p a.merge!(b)
+
 def load_library(file)
   require "yaml"
   file_hash = YAML.load_file(file)
@@ -8,14 +13,12 @@ def load_library(file)
     :get_emoticon => {}
   }
   file_hash.each do |meaning, arr|
-    file_loop = translate_hash[:get_meaning] = {
+    translate_hash[:get_meaning] = {
       "#{meaning}" => "#{arr[1]}"
     }
-    p file_loop
-    file_loop = translate_hash[:get_emoticon] = {
+    translate_hash[:get_emoticon] = {
       "#{arr[1]}" => "#{arr[0]}"
     }
-    p file_loop
   end
   translate_hash
 end
